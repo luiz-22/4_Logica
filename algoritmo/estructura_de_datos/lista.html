@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <h1>Listas</h1>
+    </section>
+
+
+    <script>
+        /* ---------------------------------------- Listas ---------------------------------------- */
+        // Nodo
+        // Lista enlazada
+        // Insertar un nodo al principio
+        // Insertar un nodo al final
+        // Insertar un nodo según posición
+        // Largo de la lista
+        // Imprimir la lista
+        // Quitar el último nodo y devolver su valor
+        // Invertir lista
+        //
+        //
+
+
+        // ---------- Nodo ----------
+        function Node(value) {
+            this.value = value
+            this.next = null
+        }
+
+
+        // ---------- Lista enlazada ----------
+        function LinkedList() {
+            this.head = null
+        }
+
+
+        // ---------- Insertar un nodo al principio ----------
+        LinkedList.prototype.insertFirst = function (value) {
+            if (this.head === null) {
+                this.head = new Node(value)
+            }
+
+            let newNode = new Node(value)
+            newNode.next = this.head
+            this.head = newNode
+        }
+
+
+        // ---------- Insertar un nodo al final ----------
+        LinkedList.prototype.insertLast = function (value) {
+            let newNodo = new Node(value);
+            if (this.head == null) {
+                this.head = newNodo;
+            } else {
+                let current = this.head;
+                while (current.next != null) {
+                    current = current.next;
+                }
+                current.next = newNodo;
+            }
+        }
+
+
+        // ---------- Insertar un nodo según posición ----------
+        // Si encuentra la posición (largo de la lista), agrega
+        //el nodo y devuelve true, si no false
+
+        LinkedList.prototype.addInPos = function (value, index) {
+            if (index > this.size()) {
+                return false
+            }
+
+            if (index === 0) return this.insertFirst(value);
+
+            const node = new Node(value);
+            let current = this.head;
+            let count = 0;
+            let previous;
+            while (count < index) {
+                count++;
+                previous = current;
+                current = current.next
+            }
+
+            previous.next = node;
+            node.next = current;
+            return true;
+        }
+
+
+        // ---------- Largo de la lista ----------
+        LinkedList.prototype.size = function (current = this.head, acum = 1) {
+            if (this.head === null) {
+                return 0
+            }
+
+            if (current.next !== null) {
+                return this.size(current.next, acum = acum + 1)
+            }
+
+            return acum
+        }
+
+
+        // ---------- Imprimir la lista ----------
+        LinkedList.prototype.print = function () {
+            current = this.head;
+
+            if (!current) {
+                console.log('La lista esta vacía.')
+                return
+            }
+
+            while (current) {
+                console.log(current.value);
+                current = current.next;
+            }
+            return
+        }
+
+
+        // ---------- Quitar el último nodo y devolver su valor ----------
+        LinkedList.prototype.removeLast = function () {
+            let current = this.head
+            let val = null
+
+            // Lista vacía
+            if (!current) {
+                return null
+            }
+
+            // Tengo un elemento
+            if (!current.next) {
+                val = current.value
+                this.head = null
+                return val
+            }
+
+            // Tengo más de un elemento
+            while (current.next.next) {
+                current = current.next
+            }
+
+            val = current.next.value
+            current.next = null
+            return val
+        }
+
+
+        // ---------- Invertir lista ----------
+        LinkedList.prototype.reverse = function () {
+            let valores = [];
+            let current = this.head;
+            while (current !== null) {
+                valores.push(current.value);
+                current = current.next;
+            }
+            while (this.head !== null) {
+                this.removeLast();
+            }
+            while (valores.length > 0) {
+                this.insertLast(valores.pop());
+            }
+            //return this;
+        }
+
+
+        // ---------------------------------------------------------------------
+
+
+        const list = new LinkedList()
+
+        list.insertLast(13)
+        list.insertLast(44)
+        list.insertLast(28)
+       
+        list.print()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <h1>Algoritmos</h1>
+    </section>
+
+
+    <script>
+        /* ---------------------------------------- Algoritmos ---------------------------------------- */
+        // Bubble Sort
+        // Insertion Sort
+        // Selection Sort
+        // Quick Sort
+        // Merge Sort
+        // Binary Search
+        // 
+        //
+
+
+
+        // ---------- Bubble Sort ---------- // O(n^2)
+        // function bubbleSort(array) {
+        //     var swap = true
+
+        //     while (swap) {
+        //         swap = false
+        //         for (var i = 0; i < array.length - 1; i++) {
+        //             if (array[i] > array[i + 1]) {
+        //                 var aux = array[i]
+        //                 array[i] = array[i + 1]
+        //                 array[i + 1] = aux
+        //                 swap = true
+        //             }
+        //         }
+        //     }
+
+        //     return array
+        // }
+
+        // let array = [5, 1, 4, 2, 8]
+
+        // console.log(bubbleSort(array))
+
+
+
+        // ---------- Insertion Sort ---------- // O(n^2)
+        /* function insertionSort(array) { 
+
+            for (var i = 1; i < array.length; i++) {
+                var j = i - 1
+                var aux = array[i]
+
+                while (j >= 0 && array[j] > aux) {
+                    array[j + 1] = array[j]
+                    j--
+                }
+                array[j + 1] = aux
+            }
+
+            return array
+        }
+
+        let array = [5, 1, 4, 2, 8]
+
+        console.log(insertionSort(array)) */
+
+
+
+        // ---------- Selection Sort ---------- // O(n^2)
+        // function selectionSort(array) { 
+
+        //     for (var i = 0; i < array.length - 1; i++) {
+        //         let posMin = i
+        //         for (var j = i + 1; j < array.length; j++) {
+        //             if (array[j] > array[posMin]) {
+        //                 posMin = j
+        //             }
+        //         }
+
+        //         var aux = array[i]
+        //         array[i] = array[posMin]
+        //         array[posMin] = aux
+        //     }
+
+        //     return array
+        // }
+
+        // let array = [5, 1, 4, 2, 8]
+
+        // console.log(selectionSort(array))
+
+
+
+        // ---------- Quick Sort ---------- // O(n log n)
+        // function quickSort(array) {
+        //     // Caso base
+        //     if (array.length <= 1) return array
+
+        //     var pivot = array[0]
+        //     var left = []
+        //     var right = []
+
+        //     for (var i = 1; i < array.length; i++) {
+        //         if (array[i] < pivot) {
+        //             left.push(array[i]);
+        //         } else {
+        //             right.push(array[i]);
+        //         }
+        //     }
+
+        //     // Recursión
+        //     return quickSort(left).concat(pivot).concat(quickSort(right))
+        // }
+
+        // let array = [5, 1, 4, 2, 8]
+
+        // console.log(quickSort(array))
+
+
+
+        // ---------- Merge Sort ---------- // O(n log n)
+        // function merge(left, right) {
+        //     var leftIndex = 0
+        //     var rightIndex = 0
+        //     var arrayResult = []
+
+        //     while (leftIndex < left.length && rightIndex < right.length) {
+        //         if (left[leftIndex] < right[rightIndex]) {
+        //             arrayResult.push(left[leftIndex])
+        //             leftIndex++
+        //         } else {
+        //             arrayResult.push(right[rightIndex])
+        //             rightIndex++
+        //         }
+        //     }
+
+        //     return arrayResult.concat(left.slice(leftIndex)).concat(right.slice(rightIndex))
+        // }
+
+        // function mergeSort(array) {
+        //     // Caso base
+        //     if (array.length === 1) return array
+
+        //     var middlePos = Math.floor(array.length / 2)
+        //     var left = array.slice(0, middlePos)
+        //     var right = array.slice(middlePos)
+
+        //     // Recursión
+        //     return merge(mergeSort(left), mergeSort(right))
+        // }
+
+        // let array = [5, 1, 4, 2, 8]
+
+        // console.log(mergeSort(array))
+
+
+
+        // ---------- Binary Search ----------
+        // Devuelve el índice de un elemento buscado
+        //en un array ordenado, si no -1
+
+        // function binarySearch(array, l, r, x) {
+        //     if (l > r) return -1
+
+        //     const m = Math.floor((l + r) / 2)
+
+        //     if (array[m] == x) return m
+
+        //     if (array[m] < x) {
+        //         return binarySearch(array, m + 1, r, x)
+        //     } else {
+        //         return binarySearch(array, l, m - 1, x)
+        //     }
+        // }
+
+        // const arr = [2,5,8,12,16,23,38,56,72,91]
+        // console.log(binarySearch(arr, 0, arr.length - 1, 72))
+    </script>
+</body>
+
+</html>
