@@ -17,5 +17,5 @@ function DecimalABinario(num) {
     return result
 }
 
-console.log(BinarioADecimal('1101'))
 console.log(DecimalABinario('13'))
+console.log(BinarioADecimal('1101'))
