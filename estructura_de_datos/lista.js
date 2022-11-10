@@ -7,6 +7,8 @@
 // Largo de la lista
 // Quitar el último nodo y devolver su valor
 // Invertir lista
+//
+//
 
 
 // ---------------------------------------- Nodo ----------------------------------------
