@@ -169,32 +169,31 @@
             tree.insert(valuesToInsert[i])
         }
 
-        let testArray1 = []
-        let testArray2 = []
-        let testArray3 = []
-        let testArray4 = []
+        let arrayInOrder = []
+        let arrayPreOrder = []
+        let arrayPostOrder = []
+        let arrayAnchura = []
 
         tree.depthFirstForEach(function (val) {
-            testArray1.push(val)
+            arrayInOrder.push(val)
         })
 
         tree.depthFirstForEach(function (val) {
-            testArray2.push(val)
+            arrayPreOrder.push(val)
         }, 'pre-order')
 
         tree.depthFirstForEach(function (val) {
-            testArray3.push(val)
+            arrayPostOrder.push(val)
         }, 'post-order')
 
         tree.breadthFirstForEach(function (val) {
-            testArray4.push(val)
+            arrayAnchura.push(val)
         })
 
-
-        console.log(testArray1)
-        console.log(testArray2)
-        console.log(testArray3)
-        console.log(testArray4)
+        console.log(arrayInOrder)
+        console.log(arrayPreOrder)
+        console.log(arrayPostOrder)
+        console.log(arrayAnchura)
 
         //console.log(tree)
     </script>
