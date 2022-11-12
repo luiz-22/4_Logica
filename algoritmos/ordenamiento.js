@@ -3,7 +3,6 @@
 // Selection Sort           // O(n^2)
 // Quick Sort               // O(n log n)
 // Merge Sort               // O(n log n)
-// Binary Search
 //
 //
 
@@ -51,6 +50,12 @@ function insertionSort(array) {
 let arrayInsertionSort = [5, 1, 4, 2, 8]
 
 console.log(insertionSort(arrayInsertionSort))
+
+// i = 1
+// j = 0
+// 5 1 4 2 8
+// ^
+
 
 // ----------------------------------- Selection Sort -----------------------------------
 function selectionSort(array) {
@@ -134,5 +139,3 @@ function mergeSort(array) {
 let arrayMergeSort = [5, 1, 4, 2, 8]
 
 console.log(mergeSort(arrayMergeSort))
-
-// ----------------------------------- Binary Search ------------------------------------
