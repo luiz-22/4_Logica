@@ -51,12 +51,6 @@ let arrayInsertionSort = [5, 1, 4, 2, 8]
 
 console.log(insertionSort(arrayInsertionSort))
 
-// i = 1
-// j = 0
-// 5 1 4 2 8
-// ^
-
-
 // ----------------------------------- Selection Sort -----------------------------------
 function selectionSort(array) {
 
