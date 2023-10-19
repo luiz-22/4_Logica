@@ -11,3 +11,7 @@ https://replit.com/
 5. Objects and Arrays Big-O
 6. Math Algorithms
 7. Fibonacci Sequence
+8. Factorial of a Number
+9. Prime Number
+10. Power of Two
+11. Recursion
