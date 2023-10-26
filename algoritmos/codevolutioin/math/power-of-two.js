@@ -20,7 +20,7 @@ function isPowerOfTwoBitWise(n) {
   return (n & (n - 1)) === 0
 }
 
-// Big-O = O(1)
+// O(1)
 
 console.log(isPowerOfTwo(1)) // true
 console.log(isPowerOfTwo(2)) // true

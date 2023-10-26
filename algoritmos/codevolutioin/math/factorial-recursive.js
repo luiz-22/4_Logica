@@ -8,3 +8,5 @@ function recursiveFactorial(n) {
 console.log(recursiveFactorial(0)) // 1
 console.log(recursiveFactorial(1)) // 1
 console.log(recursiveFactorial(5)) // 120
+
+// O(n)

@@ -15,3 +15,11 @@ https://replit.com/
 9. Prime Number
 10. Power of Two
 11. Recursion
+12. Recursive Fibonacci Sequence
+13. Recursive Factorial of a Number
+14. Search Algorithms
+15. Linear Search
+16. Binary Search
+17. Binary Search Solution
+18. Recursive Binary Search
+19. 
