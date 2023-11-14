@@ -22,4 +22,6 @@ https://replit.com/
 16. Binary Search
 17. Binary Search Solution
 18. Recursive Binary Search
-19. 
+19. Sorting Algorithms
+20. Bubble Sort
+21. Bubble Sort Solution
