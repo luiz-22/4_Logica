@@ -13,5 +13,8 @@ function quickSort(arr) {
   return [...quickSort(left), pivot, ...quickSort(right)]
 }
 
+// O(n^2)      // Worst case
+// O(nlogn)    // Avg case
+
 const arr = [8, 20, -2, 4, -6]
 console.log(quickSort(arr)) // [-6, -2, 4, 8, 20]

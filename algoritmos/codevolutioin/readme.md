@@ -27,3 +27,6 @@ https://replit.com/
 21. Bubble Sort Solution
 22. Insertion Sort
 23. Insertion Sort Solution
+24. Quick Sort
+25. Quick Sort Solution
+26. Merge Sort Solution
