@@ -25,3 +25,5 @@ https://replit.com/
 19. Sorting Algorithms
 20. Bubble Sort
 21. Bubble Sort Solution
+22. Insertion Sort
+23. Insertion Sort Solution
