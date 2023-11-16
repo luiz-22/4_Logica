@@ -8,4 +8,6 @@ function towerOfHanoi(n, fromRod, toRod, usingRod) {
   towerOfHanoi(n - 1, usingRod, toRod, fromRod)
 }
 
+// O(n^2)
+
 towerOfHanoi(3, 'A', 'C', 'B')

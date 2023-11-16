@@ -29,4 +29,13 @@ https://replit.com/
 23. Insertion Sort Solution
 24. Quick Sort
 25. Quick Sort Solution
-26. Merge Sort Solution
+26. Merge Sort
+27. Merge Sort Solution
+28. Misc Problems
+29. Cartesian Product
+30. Cartesian Product Solution
+31. Climbing Staircase
+32. Climbing Staircase Solution
+33. Tower of Hanoi
+34. Tower of Hanoi Solution
+35. Further Learning
